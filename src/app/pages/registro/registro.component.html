@@ -1,0 +1,48 @@
+<app-login-default-container 
+    titulo="Registre sua conta!"
+    textoBotaoPrimario="Registrar"   
+    textoBotaoSecundario="Faça login na sua conta!"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disabledBotaoPrimario]="!registroForm.valid"
+>
+    <form [formGroup]="registroForm">
+        <app-input-primario 
+            formControlName="nome"
+            inputName="nome"
+            type="text"
+            label="Nome"
+            placeholder="Digite seu nome"
+        >
+            
+        </app-input-primario>
+
+        <app-input-primario 
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="E-mail"
+            placeholder="Digite seu e-mail"
+        >
+            <img src="../../../assets/svg/email-icon.svg" alt="Icone de email">
+        </app-input-primario>
+
+        <app-input-primario
+            formControlName="password"
+            inputName="password" 
+            type="password"
+            label="Senha"
+        >
+        <img src="../../../assets/svg/lock-icon.svg" alt="Icone de senha">
+        </app-input-primario>
+
+        <app-input-primario
+            formControlName="passwordConfirm"
+            inputName="passwordConfirm" 
+            type="password"
+            label="Confirme sua senha"
+        >
+        <img src="../../../assets/svg/lock-icon.svg" alt="Icone de senha">
+        </app-input-primario>
+    </form>
+</app-login-default-container>

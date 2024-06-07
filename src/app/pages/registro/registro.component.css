@@ -1,0 +1,9 @@
+form{
+    width: 100%;
+    text-align: end;
+}
+span{
+    font-size: 14px;
+    text-decoration: underline;
+    color: gray;
+}

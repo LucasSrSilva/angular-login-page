@@ -1,0 +1,15 @@
+<section class="inputSection">
+    <label [for]="inputName">{{ label }}</label>
+
+    <div class="inputContent">
+        <input 
+        [type]="type" 
+        [placeholder]="placeholder"
+        [value]="value"
+        (input)="onInput($event)"
+        />
+        <div class="icon">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</section>

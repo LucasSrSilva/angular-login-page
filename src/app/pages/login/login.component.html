@@ -1,0 +1,30 @@
+<app-login-default-container 
+    titulo="Faça login na sua conta!"
+    textoBotaoPrimario="Login"   
+    textoBotaoSecundario="Cadastre-se"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disabledBotaoPrimario]="!loginForm.valid"
+>
+    <form [formGroup]="loginForm">
+        <app-input-primario 
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="E-mail"
+            placeholder="Digite seu e-mail"
+        >
+            <img src="../../../assets/svg/email-icon.svg" alt="Icone de email">
+        </app-input-primario>
+
+        <app-input-primario
+            formControlName="password"
+            inputName="password" 
+            type="password"
+            label="Senha"
+        >
+        <img src="../../../assets/svg/lock-icon.svg" alt="Icone de senha">
+        </app-input-primario>
+        <span>Forgot password?</span>
+    </form>
+</app-login-default-container>

@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(styles/toast.css);
+:root{
+    --cor-primaria: #0077b6;
+    --text-color: #1b263b;
+    --cor-secundaria: #00b4d8; 
+    --bg-color: #caf0f8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+html, body{
+    height: 100%;
+}

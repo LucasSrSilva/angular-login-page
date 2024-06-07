@@ -1,0 +1,23 @@
+<main>
+    <section class="form-section">
+        <div>
+            <p>Logo</p>
+            <img src="" alt="">
+        </div>
+        <h2>{{titulo}}</h2>
+        <ng-content></ng-content>
+        <div class="botoes">
+            <button class="botaoPrimario" (click)="submit()" [disabled]="disabledBotaoPrimario">{{textoBotaoPrimario}}</button>
+            <div class="separadores">
+                <div class="divisor"></div>
+                <span>Ou</span>
+                <div class="divisor"></div>
+            </div>
+            <button class="botaoSecundario" (click)="navigate()">{{textoBotaoSecundario}}</button>
+        </div>
+    </section>
+    <section class="main-section">
+        <h2>Titulo super maneiro</h2>
+        <p>Imagem Maneira</p>
+    </section>
+</main>
